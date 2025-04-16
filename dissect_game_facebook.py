@@ -2,7 +2,7 @@ import streamlit as st
 import random
 import csv
 
-# Sections and simplified text based on the 2014 Facebook loneliness meta-analysis
+# Updated sections including a separate Literature Review
 sections = {
     "Abstract": {
         "text": "This meta-analysis looked at 18 studies with 8,798 participants to find out if using Facebook makes people feel more or less lonely. The study found a small but significant positive correlation: more Facebook use was linked with more loneliness. The analysis also explored whether loneliness causes people to use Facebook more, or if using Facebook leads to loneliness.",
@@ -12,21 +12,28 @@ sections = {
         "explanation": "The abstract provides a concise overview of the entire study including its aims, methods, and key findings."
     },
     "Introduction": {
-        "text": "Facebook is the most-used social networking site. Some researchers believe it helps reduce loneliness by supporting social interaction, while others argue it increases loneliness by replacing in-person contact. Because past studies showed mixed results, the authors conducted a meta-analysis to find clearer answers.",
-        "question": "What is the role of the introduction in a research article?",
-        "options": ["To analyze results", "To explain statistical tests", "To provide background and rationale for the study"],
-        "answer": "To provide background and rationale for the study",
-        "explanation": "The introduction sets up the research question by reviewing past studies and identifying gaps or inconsistencies."
+        "text": "Loneliness is a growing concern in modern society. The authors introduce the idea that online social networking sites like Facebook may play a role in either reducing or contributing to loneliness. They aim to explore this question through a meta-analysis.",
+        "question": "What is the main role of the Introduction section?",
+        "options": ["To explain statistical results", "To describe previous studies in detail", "To introduce the research question and purpose"],
+        "answer": "To introduce the research question and purpose",
+        "explanation": "The introduction briefly sets up the research question, provides rationale, and outlines the study’s intent."
+    },
+    "Literature Review": {
+        "text": "Previous research has produced mixed findings about Facebook and loneliness. Some studies suggest Facebook helps people connect socially, while others show it may replace face-to-face interaction, increasing loneliness. Researchers have examined both time spent on Facebook and psychological motives for its use.",
+        "question": "Which best describes the purpose of the Literature Review section?",
+        "options": ["To present the data analysis", "To explain the hypothesis", "To summarize past studies and theoretical models"],
+        "answer": "To summarize past studies and theoretical models",
+        "explanation": "The literature review synthesizes prior research findings and identifies gaps that the current study aims to fill."
     },
     "Methods": {
-        "text": "The researchers searched databases for studies using keywords like 'Facebook' and 'loneliness.' They only included studies with quantitative data that could be used to calculate effect sizes. Different ways of measuring Facebook use and loneliness were categorized, including time spent, compulsive use, and various loneliness scales.",
+        "text": "The researchers searched databases for studies using keywords like 'Facebook' and 'loneliness.' They only included studies with quantitative data that could be used to calculate effect sizes. Different ways of measuring Facebook use and loneliness were categorized.",
         "question": "Which best describes a key part of the Methods section?",
         "options": ["Describing survey results", "Explaining how data was collected and selected", "Summarizing prior research"],
         "answer": "Explaining how data was collected and selected",
         "explanation": "The methods describe how the researchers gathered and processed the data used in the study."
     },
     "Results": {
-        "text": "The overall correlation between Facebook use and loneliness was small but positive (r = .166). People who used Facebook more tended to report more loneliness. This effect varied depending on how Facebook use and loneliness were measured. The best-fitting model suggested that loneliness causes people to use Facebook—not the other way around.",
+        "text": "The overall correlation between Facebook use and loneliness was small but positive (r = .166). People who used Facebook more tended to report more loneliness. This effect varied depending on how Facebook use and loneliness were measured.",
         "question": "What does the Results section do in a research article?",
         "options": ["Offers opinions", "Presents data and findings", "Explains theoretical implications"],
         "answer": "Presents data and findings",
@@ -37,7 +44,7 @@ sections = {
         "question": "What is the main role of the Discussion section?",
         "options": ["To present raw data", "To connect results to larger theories", "To restate the method"],
         "answer": "To connect results to larger theories",
-        "explanation": "The discussion interprets results, suggests implications, and recommends areas for future study."
+        "explanation": "The discussion interprets results, connects them to the broader field, and suggests implications for future research."
     }
 }
 
